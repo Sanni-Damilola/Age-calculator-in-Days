@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate Aour Age In Days</title>
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body id="body">
+   <div class="container">
+     <h2>Calculate Your Age In Days</h2>
+       <div class="button-holder">
+         <div class="click">
+           <button onclick="ageindays()">click me</button>
+         </div>
+
+         <div class="reset">
+           <button onclick="reset()">reset</button>
+         </div>
+       </div>
+       <div class='small-box'>
+         <div id="result"></div>
+       </div>
+   </div>
+   <div id="color" class="color">
+    <button id="light mode" onclick="lm()">light mode </button>
+    <button id="Dark-mode" onclick="dm()">Dark mode </button>
+   </div>
+   
+    <script>
+     const lm =  () => {
+     document.getElementById('body').style.background = 'white'
+     document.getElementById('light mode').style.display = 'none'
+     document.getElementById('Dark-mode').style.display = 'block'
+     document.getElementById('color').style.background = 'black'
+    }
+   </script>
+
+<script>
+  const dm = () =>  {
+  document.getElementById('body').style.background = 'black'
+  document.getElementById('Dark-mode').style.display = 'none'
+  document.getElementById('color').style.background = 'white'
+  document.getElementById('light mode').style.display = 'block'
+ }
+</script>
+
+
+   
+   <script src="../Js/index.js"></script>
+</body>
+</html>

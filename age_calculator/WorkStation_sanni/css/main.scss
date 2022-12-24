@@ -1,0 +1,137 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  position: relative;
+  // animation: random 3s ease infinite alternate;
+}
+
+@keyframes random {
+  20% {
+    background-color: yellow;
+  }
+  40% {
+    background-color: black;
+  }
+  60% {
+    background-color: green;
+  }
+  46% {
+    background-color: ghostwhite;
+  }
+  29% {
+    background-color: orange;
+  }
+  49% {
+    background-color: orchid;
+  }
+  55% {
+    background-color: peru;
+  }
+  92% {
+    background-color: orangered;
+  }
+  32% {
+    background-color: darkblue;
+  }
+  100% {
+    background-color: hotpink;
+  }
+}
+
+.container {
+  width: 75%;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+  box-shadow: 1px 4px 10px 9px white;
+  // display: flex;
+  // justify-self: center;
+  // align-items: center;
+}
+
+.button-holder {
+  display: flex;
+  border: 1px solid black;
+  padding: 10px;
+  justify-content: space-around;
+}
+
+* {
+  margin: 0%;
+}
+
+.click {
+  border: 1px solid black;
+  padding: 10px;
+  :hover {
+    font-size: 1em;
+    background: darkblue;
+    color: white;
+    transform: all 400ms;
+  }
+  button {
+    padding: 8px 13px;
+    background-color: blue;
+    font-size: larger;
+    border-radius: 0.4em;
+    cursor: pointer;
+  }
+}
+
+.reset {
+  border: 1px solid black;
+  padding: 10px;
+  :hover {
+    font-size: 1em;
+    background: darkred;
+    color: white;
+    transform: all 400ms;
+  }
+  button {
+    padding: 6px 8px;
+    background-color: red;
+    border-radius: 0.4em;
+    cursor: pointer;
+  }
+}
+
+h2 {
+  border: 1px solid black;
+}
+
+.small-box {
+  border: 1px solid black;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+
+  div {
+    padding: 8px;
+    border: 1px solid black;
+  }
+}
+
+.color {
+  padding: 10px 20px;
+  background-color: white;
+  position: absolute;
+  top: 30em;
+  border-radius: 5px;
+  :hover {
+    font-size: 1.7em;
+    background: coral;
+    transform: all 600ms;
+    border-radius: 5px;
+  }
+
+  button {
+    background: auto;
+    font-size: 1em;
+    cursor: pointer;
+  }
+}
+
+#Dark-mode {
+  display: none;
+}
